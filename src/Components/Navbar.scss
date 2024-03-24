@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    color: #fff; /* Text color of the navbar */
+    display: flex;
+    justify-content: space-between; /* Spreads the content horizontally */
+    align-items: center;
+    padding: 10px 20px; /* Padding of the navbar */
+    height: 70px;
+  }
+  .logo-box{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    font-size: 24px; /* Size of the logo */
+  }
+  
+  .main-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  
+    li {
+      padding: 0 20px; /* Spacing between menu items */
+      cursor: pointer;
+      transition: transform 0.5s ease; /* Transition effect for menu items */
+  
+      &:hover {
+        background-color: #555; /* Background color on hover */
+      }
+    }
+  
+    .more {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333; /* Background color of the dropdown menu */
+      padding: 10px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      transform: translateY(0);
+      transition: transform 0.5s ease; /* Transition effect for dropdown menu */
+  
+      li {
+        padding: 5px 0;
+        transition: opacity 0.5s ease; /* Transition effect for dropdown items */
+  
+        &:hover {
+          opacity: 0.8; /* Opacity on hover */
+        }
+      }
+    }
+  }
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  .search{
+    background: none;
+    border: none;
+    font-size: medium;
+    color: white;
+    outline: none;
+  }
+  .search-icon{
+    font-size: 20px;
+  }
+}
+.search-bar{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  .ruler{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-top: 4px;
+  }
+}
